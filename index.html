@@ -11,48 +11,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"></head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-brand">
-            <img src="assets/Logo - Samo Zdravo-01.svg" alt="SAMO ZDRAVO" class="hero-brand-svg">
-        </div>
-        <div class="hero-content">
-            <nav>
-                <img src="assets/Logo - Samo Zdravo-01.svg" alt="SAMO ZDRAVO" class="mobile-logo">
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
-                <ul id="nav-menu">
-                    <li><a href="#home">Početna</a></li>
-                    <li><a href="#flavors">Ukusi</a></li>
-                    <li><a href="#about">O nama</a></li>
-                    <li><a href="#locations">Lokacije</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+    <header class="site-header">
+        <div class="header-container">
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-icon"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#flavors" class="nav-link">Juices</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <div class="hero-main">
-                <div class="hero-text">
-                    <h1>Prirodni sokovi. Bez kompromisa.</h1>
-                    <p class="subheadline">Hladno ceđeni, 100% prirodni, bez dodataka.</p>
-                </div>
-                <a href="#flavors" class="cta-button">Pogledajte ukuse</a>
-                <div class="hero-image">
-                    <img src="assets/images/orange-multy.jpeg" alt="SAMO ZDRAVO Juice Bottles">
+            <div class="header-logo">
+                <img src="assets/Logo - Samo Zdravo-01.svg" alt="SAMO ZDRAVO" class="logo-svg">
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-label">SVEŽE CEĐENO</span>
+                <h1 class="hero-title">sok.</h1>
+                <p class="hero-description">Prirodni sokovi napravljeni od pažljivo biranog voća, bez dodatog šećera i konzervansa.<br>Čisto. Jednostavno. Zdravo.</p>
+                
+                <ul class="hero-features">
+                    <li>
+                        <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17L4 12" stroke="#4a7c4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Bez dodatog šećera</span>
+                    </li>
+                    <li>
+                        <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17L4 12" stroke="#4a7c4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Bez konzervansa</span>
+                    </li>
+                    <li>
+                        <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17L4 12" stroke="#4a7c4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Hladno ceđeno</span>
+                    </li>
+                </ul>
+                
+                <a href="#flavors" class="hero-cta">Pogledaj ukuse</a>
+                
+                <button class="scroll-indicator" id="scrollButton" aria-label="Scroll to flavors">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <img src="assets/images/raspberry-single.jpeg" alt="SAMO ZDRAVO Sok" class="hero-product-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Flavors Section -->
     <section class="flavors" id="flavors">
-        <div class="container">
             <div class="section-header fade-in">
                 <h2>Naši ukusi</h2>
                 <p>Svaka boca je proslava čistih, prirodnih sastojaka</p>
             </div>
-            
-            <!-- Desktop: Horizontal scroll layout -->
-            <div class="flavors-grid flavors-desktop">
-                <!-- Orange Carrot Flavor -->
-                <div class="flavor-card" data-flavor="orange">
+  
+            <div class="flavors-grid flavors-desktop"a-flavor="orange">
                     <img class="flavor-image" src="assets/images/orange-single.jpeg" alt="Narandža & Šargarepa Sok">
                     <div class="flavor-info">
                         <h3 class="flavor-name">Narandža & Šargarepa</h3>
@@ -352,9 +382,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    </main>
+
     <footer id="contact">
-        <div class="footer-content">
             <div class="footer-brand">
                 <h3>SAMO ZDRAVO</h3>
                 <p>Hladno ceđeni sokovi od pažljivo biranog voća i povrća.</p>

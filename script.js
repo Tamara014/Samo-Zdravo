@@ -1,23 +1,61 @@
 const menuToggle = document.querySelector('.mobile-menu-toggle');
-const navMenu = document.getElementById('nav-menu');
+const navMenu = document.querySelector('.nav-menu');
 
-if (menuToggle) {
+if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
         navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navMenu.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        }
     });
 }
 
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 100)) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
     });
 });
 
-document.addEventListener('click', (e) => {
-    if (navMenu && !navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-        navMenu.classList.remove('active');
-    }
-});
+const scrollButton = document.getElementById('scrollButton');
+if (scrollButton) {
+    scrollButton.addEventListener('click', () => {
+        const flavorsSection = document.getElementById('flavors');
+        if (flavorsSection) {
+            flavorsSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+}
 
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 
