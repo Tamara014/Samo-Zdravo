@@ -1,433 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="description" content="SAMO ZDRAVO - Premium cold-pressed natural juices. 100% natural, no additives, no preservatives.">
-    <meta name="theme-color" content="#1a1a1a">
-    <title>SAMO ZDRAVO</title>
+    <meta name="description" content="SAMO ZDRAVO - Premium hladno ceđeni prirodni sokovi. 100% prirodno, bez aditiva, bez konzervansa.">
+    <meta name="theme-color" content="#f5f5f0">
+    <title>SAMO ZDRAVO - Prirodni Sokovi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <header class="site-header">
         <div class="header-container">
-            <nav class="main-nav">
-                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                    <span class="hamburger-icon"></span>
-                </button>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#flavors" class="nav-link">Juices</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
             <div class="header-logo">
                 <img src="assets/logo-samo-zdravo.svg" alt="SAMO ZDRAVO" class="logo-svg">
             </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-icon"></span>
+            </button>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Početna</a></li>
+                    <li><a href="products.html" class="nav-link">Proizvodi</a></li>
+                    <li><a href="about.html" class="nav-link">O Nama</a></li>
+                    <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
-    <section class="hero" id="home">
-        <div class="hero-container">
+        <section class="hero" id="home">
             <div class="hero-content">
-                <span class="hero-label">SVEŽE CEĐENO</span>
-                <h1 class="hero-title">sok.</h1>
-                <p class="hero-description">Prirodni sokovi napravljeni od pažljivo biranog voća, bez dodatog šećera i konzervansa.<br>Čisto. Jednostavno. Zdravo.</p>
+                <div class="hero-logo-left">
+                    <img src="assets/logo-samo-zdravo.svg" alt="SAMO ZDRAVO" class="hero-logo-img">
+                </div>
+                <div class="hero-main">
+                    <div class="hero-tagline">
+                        <p>Premium Hladno Ceđeni Prirodni Sokovi</p>
+                    </div>
+                    <div class="hero-bottle">
+                        <img src="assets/images/FAMILY01.png" alt="SAMO ZDRAVO Natural Juice" class="hero-bottle-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section class="products-preview" id="products">
+            <div class="container">
+                <h2 class="section-title">Naši Ukusi</h2>
                 
-                <ul class="hero-features">
-                    <li>
-                        <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M20 6L9 17L4 12" stroke="#4a7c4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Bez dodatog šećera</span>
-                    </li>
-                    <li>
-                        <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M20 6L9 17L4 12" stroke="#4a7c4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Bez konzervansa</span>
-                    </li>
-                    <li>
-                        <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M20 6L9 17L4 12" stroke="#4a7c4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Hladno ceđeno</span>
-                    </li>
-                </ul>
+                <div class="products-row">
+                    <div class="product-item">
+                        <div class="product-bottle">
+                            <img src="assets/images/FOCUS.png" alt="Pomorandža i Šargarepa">
+                        </div>
+                        <div class="product-info">
+                            <h3>POMORANDŽA & ŠARGAREPA</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-bottle">
+                            <img src="assets/images/JABUKA.png" alt="Zeleni Detoks">
+                        </div>
+                        <div class="product-info">
+                            <h3>ZELENI DETOKS</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-bottle">
+                            <img src="assets/images/MALINA.png" alt="Šumsko Voće">
+                        </div>
+                        <div class="product-info">
+                            <h3>ŠUMSKO VOĆE</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-bottle">
+                            <img src="assets/images/RELAX.png" alt="Tropski Raj">
+                        </div>
+                        <div class="product-info">
+                            <h3>TROPSKI RAJ</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-bottle">
+                            <img src="assets/images/BOROVNICA.png" alt="Ljubičasta Snaga">
+                        </div>
+                        <div class="product-info">
+                            <h3>LJUBIČASTA SNAGA</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-bottle">
+                            <img src="assets/images/IMUNO.png" alt="Imuno Boost">
+                        </div>
+                        <div class="product-info">
+                            <h3>IMUNO BOOST</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-bottle">
+                            <img src="assets/images/MALINA MED.png" alt="Malina Med">
+                        </div>
+                        <div class="product-info">
+                            <h3>MALINA MED</h3>
+                        </div>
+                    </div>
+                </div>
                 
-                <a href="#flavors" class="hero-cta">Pogledaj ukuse</a>
-                
-                <button class="scroll-indicator" id="scrollButton" aria-label="Scroll to flavors">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </div>
-            
-            <div class="hero-visual">
-                <div class="hero-image-wrapper">
-                    <img src="assets/images/raspberry-single.jpeg" alt="SAMO ZDRAVO Sok" class="hero-product-image">
+                <div class="products-cta">
+                    <a href="products.html" class="btn-primary">Pogledajte Sve Proizvode</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="flavors" id="flavors">
-            <div class="section-header fade-in">
-                <h2>Naši ukusi</h2>
-                <p>Svaka boca je proslava čistih, prirodnih sastojaka</p>
-            </div>
-  
-            <div class="flavors-grid flavors-desktop">
-                <div class="flavor-card" data-flavor="orange">
-                    <img class="flavor-image" src="assets/images/orange-single.jpeg" alt="Narandža & Šargarepa Sok">
-                    <div class="flavor-info">
-                        <h3 class="flavor-name">Narandža & Šargarepa</h3>
-                        <p class="flavor-description">Živopisna mešavina sveže narandže i šargarepe, bogata vitaminom C.</p>
-                        <div class="flavor-benefits">
-                            <span class="benefit-tag">Vitamin C</span>
-                            <span class="benefit-tag">Povećava energiju</span>
-                            <span class="benefit-tag">Imunitet</span>
-                        </div>
-                        <a href="#" class="learn-more">Saznajte više →</a>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="assets/images/FAMILY02.png" alt="Natural Ingredients">
                     </div>
-                </div>
-                <div class="flavor-card" data-flavor="green">
-                    <img class="flavor-image" src="assets/images/apple-single.jpeg" alt="Zeleni Detoks Sok">
-                    <div class="flavor-info">
-                        <h3 class="flavor-name">Zeleni Detoks</h3>
-                        <p class="flavor-description">Osvežavajuća mešavina spanaća, krastavca, jabuke i limuna.</p>
-                        <div class="flavor-benefits">
-                            <span class="benefit-tag">Detoks</span>
-                            <span class="benefit-tag">Hidratacija</span>
-                            <span class="benefit-tag">Alkalizacija</span>
-                        </div>
-                        <a href="#" class="learn-more">Saznajte više →</a>
-                    </div>
-                </div>
-
-                <div class="flavor-card" data-flavor="red">
-                    <img class="flavor-image" src="assets/images/raspberry-single.jpeg" alt="Berry Blast Sok">
-                    <div class="flavor-info">
-                        <h3 class="flavor-name">Borovnica</h3>
-                        <p class="flavor-description">Bogata mešavina jagoda, malina i borovnica.</p>
-                        <div class="flavor-benefits">
-                            <span class="benefit-tag">Antioksidanti</span>
-                            <span class="benefit-tag">Zdravlje srca</span>
-                            <span class="benefit-tag">Anti-aging</span>
-                        </div>
-                        <a href="#" class="learn-more">Saznajte više →</a>
-                    </div>
-                </div>
-
-                <div class="flavor-card" data-flavor="yellow">
-                    <img class="flavor-image" src="assets/images/lemon-single.jpeg" alt="Tropical Paradise Sok">
-                    <div class="flavor-info">
-                        <h3 class="flavor-name">Tropski Raj</h3>
-                        <p class="flavor-description">Egzotična mešavina ananasa, manga i pasionog voća.</p>
-                        <div class="flavor-benefits">
-                            <span class="benefit-tag">Digestivni</span>
-                            <span class="benefit-tag">Vitamin A</span>
-                            <span class="benefit-tag">Poboljšava raspoloženje</span>
-                        </div>
-                        <a href="#" class="learn-more">Saznajte više →</a>
-                    </div>
-                </div>
-
-                <div class="flavor-card" data-flavor="purple">
-                    <img class="flavor-image" src="assets/images/blueberry-single.jpeg" alt="Purple Power Sok">
-                    <div class="flavor-info">
-                        <h3 class="flavor-name">Malina med</h3>
-                        <p class="flavor-description">Snažna podrška tvom imunitetu, svaki dan.</p>
-                        <div class="flavor-benefits">
-                            <span class="benefit-tag">Izdržljivost</span>
-                            <span class="benefit-tag">Zdravlje mozga</span>
-                            <span class="benefit-tag">Antioksidanti</span>
-                        </div>
-                        <a href="#" class="learn-more">Saznajte više →</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flavors-accordion flavors-mobile">
-                <div class="accordion-item" data-flavor="orange">
-                    <button class="accordion-header" aria-expanded="false" aria-controls="accordion-orange">
-                        <span class="accordion-title">Narandža i Šargarepa</span>
-                        <span class="accordion-icon" aria-hidden="true">+</span>
-                    </button>
-                    <div class="accordion-content" id="accordion-orange">
-                        <div class="accordion-inner">
-                            <div class="accordion-image">
-                                <img src="assets/images/orange-single.jpeg" alt="Orange & Carrot Juice">
+                    <div class="about-text">
+                        <h2>Čisti Sastojci,<br>Čista Strast</h2>
+                        <p>U SAMO ZDRAVO verujemo da priroda pruža sve što nam je potrebno za optimalno zdravlje i vitalnost. Naši hladno ceđeni sokovi pravljeni su od pažljivo odabranih organskih proizvoda, bez veštačkih boja, konzervansa ili prečica.</p>
+                        <p>Svaka boca je hladno ceđena kako bi se sačuvale maksimalne nutritivne vrednosti i ukus, pružajući najsvežije iskustvo soka.</p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🌱</span>
+                                <h4>100% Prirodno</h4>
+                                <p>Samo čisto voće i povrće</p>
                             </div>
-                            <div class="accordion-details">
-                                <p class="accordion-description">Živahna mešavina svežih narandži i šargarepe, bogata vitaminom C.</p>
-                                <div class="accordion-ingredients">
-                                    <strong>Sastojci:</strong>
-                                    <p>Sveže narandže, organska šargarepa, sok od limuna</p>
-                                </div>
-                                <div class="accordion-benefits">
-                                    <strong>Prednosti:</strong>
-                                    <div class="benefit-tags">
-                                        <span class="benefit-tag">Vitamin C</span>
-                                        <span class="benefit-tag">Povećava energiju</span>
-                                        <span class="benefit-tag">Imunitet</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="accordion-cta">Saznajte više →</a>
+                            <div class="feature-item">
+                                <span class="feature-icon">❄️</span>
+                                <h4>Hladno Ceđeno</h4>
+                                <p>Maksimalno sačuvani nutrijenti</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item" data-flavor="green">
-                    <button class="accordion-header" aria-expanded="false" aria-controls="accordion-green">
-                        <span class="accordion-title">Zeleni Detoks</span>
-                        <span class="accordion-icon" aria-hidden="true">+</span>
-                    </button>
-                    <div class="accordion-content" id="accordion-green">
-                        <div class="accordion-inner">
-                            <div class="accordion-image">
-                                <img src="assets/images/apple-single.jpeg" alt="Green Detox Juice">
-                            </div>
-                            <div class="accordion-details">
-                                <p class="accordion-description">Osvežavajuća mešavina spanaća, krastavca, jabuke i limuna.</p>
-                                <div class="accordion-ingredients">
-                                    <strong>Sastojci:</strong>
-                                    <p>Spanać, krastavac, zelena jabuka, celer, limun</p>
-                                </div>
-                                <div class="accordion-benefits">
-                                    <strong>Prednosti:</strong>
-                                    <div class="benefit-tags">
-                                        <span class="benefit-tag">Detoks</span>
-                                        <span class="benefit-tag">Hidratacija</span>
-                                        <span class="benefit-tag">Alkalizacija</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="accordion-cta">Saznajte više →</a>
+                            <div class="feature-item">
+                                <span class="feature-icon">🚫</span>
+                                <h4>Bez Aditiva</h4>
+                                <p>Bez konzervansa i veštačkih aroma</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item" data-flavor="red">
-                    <button class="accordion-header" aria-expanded="false" aria-controls="accordion-red">
-                        <span class="accordion-title">Bobičasto Voće</span>
-                        <span class="accordion-icon" aria-hidden="true">+</span>
-                    </button>
-                    <div class="accordion-content" id="accordion-red">
-                        <div class="accordion-inner">
-                            <div class="accordion-image">
-                                <img src="assets/images/raspberry-single.jpeg" alt="Berry Blast Juice">
-                            </div>
-                            <div class="accordion-details">
-                                <p class="accordion-description">Bogata mešavina jagoda, malina i borovnica.</p>
-                                <div class="accordion-ingredients">
-                                    <strong>Sastojci:</strong>
-                                    <p>Jagode, maline, borovnice, kupine</p>
-                                </div>
-                                <div class="accordion-benefits">
-                                    <strong>Prednosti:</strong>
-                                    <div class="benefit-tags">
-                                        <span class="benefit-tag">Antioksidanti</span>
-                                        <span class="benefit-tag">Zdravlje Srca</span>
-                                        <span class="benefit-tag">Anti-aging</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="accordion-cta">Saznajte više →</a>
-                            </div>
+                <div class="about-locations">
+                    <h2 class="section-title">Gde Nas Možete Naći</h2>
+                    <div class="locations-grid">
+                        <div class="location-card">
+                            <h3>Beograd</h3>
+                            <p class="location-address">Knez Mihailova 45, Stari Grad</p>
+                            <p class="location-hours">Pon-Sub: 8:00 - 20:00</p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item" data-flavor="yellow">
-                    <button class="accordion-header" aria-expanded="false" aria-controls="accordion-yellow">
-                        <span class="accordion-title">Tropski Raj</span>
-                        <span class="accordion-icon" aria-hidden="true">+</span>
-                    </button>
-                    <div class="accordion-content" id="accordion-yellow">
-                        <div class="accordion-inner">
-                            <div class="accordion-image">
-                                <img src="assets/images/lemon-single.jpeg" alt="Tropical Paradise Juice">
-                            </div>
-                            <div class="accordion-details">
-                                <p class="accordion-description">Egzotična fuzija ananasa, manga i pasionog voća.</p>
-                                <div class="accordion-ingredients">
-                                    <strong>Sastojci:</strong>
-                                    <p>Ananas, mango, pasiono voće, kokosova voda</p>
-                                </div>
-                                <div class="accordion-benefits">
-                                    <strong>Prednosti:</strong>
-                                    <div class="benefit-tags">
-                                        <span class="benefit-tag">Digestivni</span>
-                                        <span class="benefit-tag">Vitamin A</span>
-                                        <span class="benefit-tag">Poboljšanje Raspoloženja</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="accordion-cta">Saznajte više →</a>
-                            </div>
+                        <div class="location-card">
+                            <h3>Novi Sad</h3>
+                            <p class="location-address">Zmaj Jovina 12, Centar</p>
+                            <p class="location-hours">Pon-Sub: 8:00 - 20:00</p>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item" data-flavor="purple">
-                    <button class="accordion-header" aria-expanded="false" aria-controls="accordion-purple">
-                        <span class="accordion-title">Ljubicasta Snaga</span>
-                        <span class="accordion-icon" aria-hidden="true">+</span>
-                    </button>
-                    <div class="accordion-content" id="accordion-purple">
-                        <div class="accordion-inner">
-                            <div class="accordion-image">
-                                <img src="assets/images/blueberry-single.jpeg" alt="Purple Power Juice">
-                            </div>
-                            <div class="accordion-details">
-                                <p class="accordion-description">Snažna podrška tvom imunitetu, svaki dan.</p>
-                                <div class="accordion-ingredients">
-                                    <strong>Sastojci:</strong>
-                                    <p>Cvekla, kupine, acai bobice, nar</p>
-                                </div>
-                                <div class="accordion-benefits">
-                                    <strong>Prednosti:</strong>
-                                    <div class="benefit-tags">
-                                        <span class="benefit-tag">Izdržljivost</span>
-                                        <span class="benefit-tag">Zdravlje Mozga</span>
-                                        <span class="benefit-tag">Antioksidanti</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="accordion-cta">Saznajte više →</a>
-                            </div>
+                        <div class="location-card">
+                            <h3>Niš</h3>
+                            <p class="location-address">Obrenovićeva 22, Centar</p>
+                            <p class="location-hours">Pon-Sub: 9:00 - 19:00</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content fade-in">
-                <div>
-                    <img class="about-image" src="assets/images/carrot-multy.jpeg" alt="SAMO ZDRAVO Production">
-                </div>
-                <div class="about-text">
-                    <h2>Čisti Sastojci, Čista Strast</h2>
-                    <p>SAMO ZDRAVO je nastao iz jednostavnog uverenja: da nam priroda pruža sve što nam je potrebno za optimalno zdravlje i vitalnost. Bez veštačkih boja, bez konzervansa, bez prečica.</p>
-                    <p>Svaka boca je hladno ceđena kako bi se sačuvali maksimalni nutrijenti i ukus, pružajući najsvežije iskustvo soka moguće. Radimo direktno sa lokalnim farmerima kako bismo obezbedili najkvalitetnije organske proizvode, garantujući kvalitet od farme do boce.</p>
-                    
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <h3>🌱 100% Prirodno</h3>
-                            <p>Samo čisto voće i povrće, ništa drugo.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <h3>❄️ Hladno Ceđeno</h3>
-                            <p>Maksimalni nutrijenti sačuvani u svakoj boci.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <h3>🚫 Bez Dodataka</h3>
-                            <p>Bez konzervansa, boja ili veštačkih aroma.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <h3>🌾 Lokalno Poreklo</h3>
-                            <p>Podrška lokalnim farmerima i zajednicama.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="locations" id="locations">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Naše Lokacije</h2>
-                <p>Posetite naše lokacije i osetite razliku</p>
-            </div>
-            <div class="locations-grid fade-in">
-                <div class="location-card">
-                    <h3 class="location-city">Beograd</h3>
-                    <p class="location-address">
-                        <span class="location-icon">📍</span>
-                        Knez Mihailova 45, Stari Grad
-                    </p>
-                    <p class="location-address">
-                        <span class="location-icon">⏰</span>
-                        Mon-Sat: 8:00 - 20:00
-                    </p>
-                </div>
-                <div class="location-card">
-                    <h3 class="location-city">Novi Sad</h3>
-                    <p class="location-address">
-                        <span class="location-icon">📍</span>
-                        Zmaj Jovina 12, City Center
-                    </p>
-                    <p class="location-address">
-                        <span class="location-icon">⏰</span>
-                        Mon-Sat: 8:00 - 20:00
-                    </p>
-                </div>
-                <div class="location-card">
-                    <h3 class="location-city">Niš</h3>
-                    <p class="location-address">
-                        <span class="location-icon">📍</span>
-                        Obrenovićeva 22, Center
-                    </p>
-                    <p class="location-address">
-                        <span class="location-icon">⏰</span>
-                        Mon-Sat: 9:00 - 19:00
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </section>
     </main>
 
     <footer id="contact">
+        <div class="footer-container">
             <div class="footer-brand">
-                <h3>SAMO ZDRAVO</h3>
-                <p>Hladno ceđeni sokovi od pažljivo biranog voća i povrća.</p>
+                <img src="assets/logo-samo-zdravo.svg" alt="SAMO ZDRAVO" class="footer-logo">
+                <p>Premium Hladno Ceđeni Prirodni Sokovi</p>
+            </div>
+            
+            <div class="footer-nav">
+                <h4>Navigacija</h4>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="products.html">Proizvodi</a></li>
+                    <li><a href="about.html">O Nama</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p>Email: info@samozdra vo.com</p>
+                <p>Telefon: +381 11 123 4567</p>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Pratite Nas</h4>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </a>
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
                     </a>
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <a href="#" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                         </svg>
                     </a>
                 </div>
             </div>
-            <div class="footer-section">
-                <h4>Kontakt</h4>
-                <p>Email: info@samozdrav o.com</p>
-                <p>Phone: +381 11 123 4567</p>
-            </div>
-            <div class="footer-section">
-                <h4>Brze Linkove</h4>
-                <a href="#home">Početna</a>
-                <a href="#flavors">Ukusi</a>
-                <a href="#about">O Nama</a>
-                <a href="#locations">Lokacije</a>
-            </div>
-            <div class="footer-section">
-                <h4>Radno Vreme</h4>
-                <p>Ponedeljak - Subota</p>
-                <p>8:00 - 20:00</p>
-                <p>Nedelja: Zatvoreno</p>
-            </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 SAMO ZDRAVO. All rights reserved. | Designed with passion for health.</p>
+            <p>&copy; 2025 SAMO ZDRAVO. Sva prava zadržana.</p>
         </div>
     </footer>
 

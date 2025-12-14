@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O nama SAMO ZDRAVO - Saznajte o našoj misiji, osnivaču i gde nas možete pronaći.">
+    <title>O Nama - SAMO ZDRAVO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-page {
+            padding-top: var(--header-height);
+        }
+
+        .about-hero {
+            background: var(--color-bg);
+            padding: 4rem 3rem;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .about-hero p {
+            font-size: 1.25rem;
+            color: var(--color-text-light);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .about-story {
+            padding: var(--spacing-xl) 0;
+            background: white;
+        }
+
+        .about-story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-story-image img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .about-story-text h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: var(--spacing-md);
+            letter-spacing: -1px;
+        }
+
+        .about-story-text p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .founder-section {
+            padding: var(--spacing-xl) 0;
+            background: var(--color-bg);
+        }
+
+        .founder-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .founder-image {
+            position: sticky;
+            top: calc(var(--header-height) + 2rem);
+        }
+
+        .founder-image img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .founder-content h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .founder-title {
+            font-size: 1.25rem;
+            color: var(--color-text-light);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .founder-content p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin-bottom: 1.5rem;
+        }
+
+        .founder-quote {
+            background: white;
+            padding: 2rem;
+            border-left: 4px solid var(--color-primary);
+            margin: 2rem 0;
+            font-style: italic;
+            font-size: 1.25rem;
+            line-height: 1.7;
+        }
+
+        .values-section {
+            padding: var(--spacing-xl) 0;
+            background: white;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .value-card {
+            background: var(--color-bg);
+            padding: 2rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .value-card p {
+            font-size: 1rem;
+            color: var(--color-text-light);
+            line-height: 1.6;
+        }
+
+        .locations-section {
+            padding: var(--spacing-xl) 0;
+            background: var(--color-bg);
+        }
+
+        @media (max-width: 1024px) {
+            .about-story-grid,
+            .founder-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .founder-image {
+                position: relative;
+                top: 0;
+            }
+
+            .about-story-image img {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-hero {
+                padding: 3rem 1.5rem;
+            }
+
+            .about-hero h1 {
+                font-size: 3rem;
+            }
+
+            .about-hero p {
+                font-size: 1.125rem;
+            }
+
+            .about-story-image img {
+                height: 300px;
+            }
+
+            .founder-image img {
+                aspect-ratio: 1;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="assets/logo-samo-zdravo.svg" alt="SAMO ZDRAVO" class="logo-svg">
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-icon"></span>
+            </button>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Početna</a></li>
+                    <li><a href="products.html" class="nav-link">Proizvodi</a></li>
+                    <li><a href="about.html" class="nav-link active">O Nama</a></li>
+                    <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-page">
+        <section class="about-hero">
+            <h1>O SAMO ZDRAVO</h1>
+            <p>Verujemo da priroda pruža sve što nam je potrebno za optimalno zdravlje i vitalnost. Naša misija je da vam donesemo najčistije, najhranljivije hladno ceđene sokove napravljene od pažljivo odabranih organskih proizvoda.</p>
+        </section>
+
+        <section class="about-story">
+            <div class="container">
+                <div class="about-story-grid">
+                    <div class="about-story-image">
+                        <img src="assets/images/FAMILY02.psd" alt="SAMO ZDRAVO Story">
+                    </div>
+                    <div class="about-story-text">
+                        <h2>Naša Priča</h2>
+                        <p>SAMO ZDRAVO je nastao iz jednostavnog uverenja: da priroda pruža sve što nam je potrebno za optimalno zdravlje i vitalnost. Bez veštačkih boja, konzervansa ili prečica, posvećeni smo pružanju najčistijeg iskustva soka.</p>
+                        <p>Svaka boca je hladno ceđena kako bi se sačuvale maksimalne nutritivne vrednosti i ukus, pružajući najsvežije iskustvo soka. Radimo direktno sa lokalnim farmerima kako bismo nabavili najkvalitetnije organske proizvode, obezbedujući kvalitet od farme do boce.</p>
+                        <p>Što je počelo kao mali projekat strasti, preraslo je u misiju da učinimo zdrave, ukusne, prirodne sokove dostupnim svima koji cene svoje zdravlje i dobrobit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="founder-section">
+            <div class="container">
+                <div class="founder-grid">
+                    <div class="founder-image">
+                        <img src="assets/images/FAMILY02.psd" alt="Founder">
+                    </div>
+                    <div class="founder-content">
+                        <h2>Upoznajte Našeg Osnivača</h2>
+                        <p class="founder-title">Osnivač & CEO</p>
+                        <p>Put našeg osnivača počeo je ličnom transformacijom zdravlja kroz prirodnu ishranu. Nakon što je lično doživeo snažne prednosti hladno ceđenih sokova, rodila se vizija za SAMO ZDRAVO.</p>
+                        <p>Sa pozadinom u nauci o ishrani i strasću za održivim poljoprivrednim metodama, naš osnivač je krenuo da kreira brend koji će doneti premium, lokalno proizvedene hladno ceđene sokove na srpsko tržište.</p>
+                        
+                        <div class="founder-quote">
+                            "Verujem da kada dajete svom telu ono što mu zaista treba – čistu, hranjivo bogatu hranu – ono odgovara energijom, vitalnošću i zdravljem. To je osnova SAMO ZDRAVO."
+                        </div>
+                        
+                        <p>Današ, SAMO ZDRAVO stoji kao svedok moći prirodne ishrane, kombinujući tradicionalne metode pravljenja sokova sa modernom tehnologijom hladnog ceđenja kako bi pružio sokove koji su jednako ukusni koliko su i hranjivi.</p>
+                        <p>Naša posvećenost se protežepreko samog pravljenja odličnog soka – posvećeni smo podršci lokalnih farmera, promovisanju održivih praksi i pomaganju našoj zajednici da živi zdravije, življe živote.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container">
+                <h2 class="section-title">Naše Vrednosti</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🌱</div>
+                        <h3>100% Prirodno</h3>
+                        <p>Samo čisto voće i povrće, ništa veštačko, bez konzervansa ili aditiva.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">❄️</div>
+                        <h3>Hladno Ceđeno</h3>
+                        <p>Maksimalno sačuvani nutrijenti kroz naš nežan proces hladnog ceđenja.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🌾</div>
+                        <h3>Lokalno Proizvedeno</h3>
+                        <p>Podrška lokalnih farmera i osiguravanje najsvežijih sastojaka.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">♻️</div>
+                        <h3>Održivo</h3>
+                        <p>Posvećeni eko-prijateljskim praksama i smanjenju našeg uticaja na životnu sredinu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="locations-section">
+            <div class="container">
+                <h2 class="section-title">Gde Nas Možete Naći</h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <h3>Beograd</h3>
+                        <p class="location-address">Knez Mihailova 45, Stari Grad</p>
+                        <p class="location-hours">Pon-Sub: 8:00 - 20:00</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>Novi Sad</h3>
+                        <p class="location-address">Zmaj Jovina 12, Centar</p>
+                        <p class="location-hours">Pon-Sub: 8:00 - 20:00</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>Niš</h3>
+                        <p class="location-address">Obrenovićeva 22, Centar</p>
+                        <p class="location-hours">Pon-Sub: 9:00 - 19:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo-samo-zdravo.svg" alt="SAMO ZDRAVO" class="footer-logo">
+                <p>Premium Hladno Ceđeni Prirodni Sokovi</p>
+            </div>
+            
+            <div class="footer-nav">
+                <h4>Navigacija</h4>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="products.html">Proizvodi</a></li>
+                    <li><a href="about.html">O Nama</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p>Email: info@samozdra vo.com</p>
+                <p>Telefon: +381 11 123 4567</p>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Pratite Nas</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SAMO ZDRAVO. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
